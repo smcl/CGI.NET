@@ -1,0 +1,30 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.1.32421.90
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CGI.NET", "CGI.NET\CGI.NET.csproj", "{5C02C997-D799-444B-B5A6-2FA6B41D1C6B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{FF6CA0C4-7A68-442D-9DCE-520A0E897B4B}"
+	ProjectSection(SolutionItems) = preProject
+		README.md = README.md
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5C02C997-D799-444B-B5A6-2FA6B41D1C6B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5C02C997-D799-444B-B5A6-2FA6B41D1C6B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5C02C997-D799-444B-B5A6-2FA6B41D1C6B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5C02C997-D799-444B-B5A6-2FA6B41D1C6B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9F7643B6-44E0-4072-9C01-D87BF3C86305}
+	EndGlobalSection
+EndGlobal
