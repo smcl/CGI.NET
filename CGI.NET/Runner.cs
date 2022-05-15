@@ -1,6 +1,7 @@
 ﻿
 using Microsoft.AspNetCore.Http.Features;
 using System.Diagnostics;
+using System.Linq;
 
 namespace CGI.NET
 {
@@ -36,10 +37,13 @@ namespace CGI.NET
             }
 
             // write query string to QUERY_STRING
-            var queryStringValues = request.Query.Select(q => $"{q.Key}={q.Value}");
-            if (queryStringValues.Any())
+            var routeValues = request.RouteValues.Select(rv => (rv.Key, rv.Value.ToString()));
+            var queryStringValues = request.Query.Select(qv => (qv.Key, qv.Value.ToString()));
+
+            var allValues = routeValues.Union(queryStringValues).Select(kvp => $"{kvp.Key}={kvp.Item2}");
+            if (allValues.Any())
             {
-                var queryString = string.Join("&", queryStringValues);
+                var queryString = string.Join("&", allValues);
                 process.StartInfo.EnvironmentVariables.Add("QUERY_STRING", queryString);
             }
 
@@ -58,6 +62,8 @@ namespace CGI.NET
             }
 
             process.WaitForExit();
+
+            Console.WriteLine(process.StandardError.ReadToEnd());
 
             return process.StandardOutput.ReadToEnd();
         }
