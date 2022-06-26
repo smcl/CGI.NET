@@ -15,3 +15,10 @@ or `cgi-bin/ciao/{name}`:
 
     $ curl https://localhost:5001/cgi-bin/ciao/sean --insecure
     ciao, sean
+
+
+## TODO
+
+- actually i'm gonna play with this a little bit more, added a HTTP server implementation so update this readme and rename stuff
+- proper parser for the query string, rather than just "anything but whitespace"
+-

@@ -3,12 +3,20 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.1.32421.90
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CGI.NET", "CGI.NET\CGI.NET.csproj", "{5C02C997-D799-444B-B5A6-2FA6B41D1C6B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CGI.NET", "CGI.NET\CGI.NET.csproj", "{5C02C997-D799-444B-B5A6-2FA6B41D1C6B}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{FF6CA0C4-7A68-442D-9DCE-520A0E897B4B}"
 	ProjectSection(SolutionItems) = preProject
 		README.md = README.md
 	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HTTP.NET", "Osprey\Osprey.csproj", "{A2C79654-0206-41C9-B9AD-0CE6A0E873C0}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{8471D405-F27D-4D85-87E3-35AE7296C44F}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HTTP.NET.Tests", "HTTP.NET.Tests\HTTP.NET.Tests.csproj", "{AE736CAE-E396-4D37-A7F1-0D1022EA67C6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Common", "Common\Common.csproj", "{D549E016-594B-457B-AD0F-B8B140FA12AE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -20,9 +28,24 @@ Global
 		{5C02C997-D799-444B-B5A6-2FA6B41D1C6B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5C02C997-D799-444B-B5A6-2FA6B41D1C6B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5C02C997-D799-444B-B5A6-2FA6B41D1C6B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A2C79654-0206-41C9-B9AD-0CE6A0E873C0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A2C79654-0206-41C9-B9AD-0CE6A0E873C0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A2C79654-0206-41C9-B9AD-0CE6A0E873C0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A2C79654-0206-41C9-B9AD-0CE6A0E873C0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AE736CAE-E396-4D37-A7F1-0D1022EA67C6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AE736CAE-E396-4D37-A7F1-0D1022EA67C6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AE736CAE-E396-4D37-A7F1-0D1022EA67C6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AE736CAE-E396-4D37-A7F1-0D1022EA67C6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D549E016-594B-457B-AD0F-B8B140FA12AE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D549E016-594B-457B-AD0F-B8B140FA12AE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D549E016-594B-457B-AD0F-B8B140FA12AE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D549E016-594B-457B-AD0F-B8B140FA12AE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{AE736CAE-E396-4D37-A7F1-0D1022EA67C6} = {8471D405-F27D-4D85-87E3-35AE7296C44F}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {9F7643B6-44E0-4072-9C01-D87BF3C86305}
